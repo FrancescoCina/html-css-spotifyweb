@@ -17,6 +17,10 @@ body{
     text-align: center;
 }
 
+.flexbox{
+    display: flex;    
+}
+
 main{
     background-color:#141922;
     width: 100%;
@@ -112,7 +116,7 @@ main p{
 }
 
 
- .row [class*="col-"] img{
+ main .row [class*="col-"] img{
     width: 97%;
     height: 80%;
     object-fit: contain;
@@ -136,4 +140,117 @@ main p{
 footer{
     background-color: #282828;
     height:100px;
+}
+
+footer .row{
+    padding-bottom: 0;
+    height: 100%;
+}
+
+
+footer .row [class*="col-"]{
+    height:100%;
+}
+
+footer .col-3{
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.row .col-3:nth-child(2){
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+
+.cover-song{
+    width: 25%;
+    height: 25%;
+    object-fit: cover;
+}
+
+
+.information-song p{
+    text-transform: capitalize;
+    color: #707277;
+}
+
+.information-song p:first-child{
+    color:#fff;
+}
+
+.icons-song .far{
+    display: block;
+    padding: 3px;
+    color: #707277;
+    font-size:1.5em;
+}
+
+
+
+footer .col-5 .commands{
+    justify-content: space-around;
+    align-items: center;
+}
+
+.commands {
+    height: 50%;
+}
+
+.commands i{
+    font-size:1.8em;
+    display:block;
+}
+
+
+.commands .fa-play-circle{
+    font-size: 3em;
+}
+
+
+.progressbar-song {
+    height: 50%;
+    align-items: center;
+}
+
+
+.bar{
+    width:80%;
+    height: 5px;
+    border-radius: 70px;
+    background-color:#707277;
+    line-height: 5px;
+}
+
+
+.progressbar-song .listening, 
+.progressbar-song .missing{
+    margin: 0 7px;
+}
+
+.bar .listened{
+    display: block;
+    width: 15%;
+    height: 100%;
+    background-color: lightgray;
+    border-radius: 70px;
+}
+
+.row .col:nth-child(3) .icons-song{
+    height: 100%;
+    color: #fff;
+}
+
+
+
+.bar .volume{
+    display: block;
+    width: 15%;
+    height: 100%;
+    background-color: lightgray;
+    border-radius: 70px;
 }
