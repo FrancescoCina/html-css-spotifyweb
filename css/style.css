@@ -7,6 +7,8 @@
 body{
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
+    color:#fff;
+    
 }
 
 
@@ -42,7 +44,6 @@ header{
 }
 
 .upgrade-button p{
-    color:#fff;
     padding: 0px 35px;
     vertical-align: middle;    
     text-transform: uppercase;
@@ -87,6 +88,49 @@ header{
     text-decoration:none;
     color: #707277;
 }
+
+
+main p{
+   font-size: 1.2em;
+   font-weight: 700;
+   padding-bottom: 10px;
+}
+
+
+.album-information .name-album{
+    font-size: 1.5em;
+    text-transform: capitalize;
+}
+
+
+
+
+
+.album-information .author{
+    color:#707277;
+    font-size: 0.2em;
+}
+
+
+ .row [class*="col-"] img{
+    width: 97%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.row:first-child .col-6{
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* FOOTER */
 footer{
