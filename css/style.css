@@ -76,14 +76,19 @@ header{
 
 
 .row{
-    min-height: 0;
-    color: #707277;
+    min-height: 0;    
     text-transform: uppercase;
     font-size: 0.5em;
     font-weight: 700;
     padding-bottom: 30px;
 }
 
+.row [class*="col"] a{
+    text-decoration:none;
+    color: #707277;
+}
+
+/* FOOTER */
 footer{
     background-color: #282828;
     height:100px;
