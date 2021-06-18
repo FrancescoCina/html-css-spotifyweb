@@ -159,13 +159,6 @@ footer .col-3{
 
 
 
-.row .col-3:nth-child(2){
-    justify-content: flex-start;
-    align-items: center;
-}
-
-
-
 
 .cover-song{
     width: 25%;
@@ -189,8 +182,6 @@ footer .col-3{
     color: #707277;
     font-size:1.5em;
 }
-
-
 
 footer .col-5 .commands{
     justify-content: space-around;
@@ -218,7 +209,7 @@ footer .col-5 .commands{
 }
 
 
-.bar{
+.bar-song{
     width:80%;
     height: 5px;
     border-radius: 70px;
@@ -240,9 +231,22 @@ footer .col-5 .commands{
     border-radius: 70px;
 }
 
-.row .col:nth-child(3) .icons-song{
-    height: 100%;
+.row .col-4{
+    justify-content: space-around;
+    align-items: center;
+}
+
+.row .col-4 .icons-song{
     color: #fff;
+}
+
+
+.bar{
+    display: block;
+    width: 50%;
+    height: 5px;
+    background-color:#707277;
+    border-radius: 70px;
 }
 
 
@@ -253,4 +257,12 @@ footer .col-5 .commands{
     height: 100%;
     background-color: lightgray;
     border-radius: 70px;
+}
+
+.col-4 .fas{
+    padding: 0 3px;
+}
+
+.icons-song .queue .fas{
+    padding: 0;
 }
