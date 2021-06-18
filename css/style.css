@@ -107,10 +107,7 @@ main p{
 }
 
 
-
-
-
-.album-information .author{
+.author{
     color:#707277;
     font-size: 0.2em;
 }
@@ -122,18 +119,48 @@ main p{
     object-fit: contain;
 }
 
-.row:first-child .col-6{
-    margin-left: 10px;
+
+
+.row .col-6{
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius:50%;
+    position: relative;
+   
 }
 
 
 
 
+.del-rey{
+    background-image: url(../img/youg.jpeg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
 
+.einaudi{
+    background-image: url(../img/einaudi.jpeg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
-
-
-
+.del-rey p, 
+.einaudi p{
+    position: absolute;
+    top: 110%;
+    left:0;
+    text-transform: capitalize;
+    font-size: 1em;
+}
 
 
 /* FOOTER */
@@ -156,9 +183,6 @@ footer .col-3{
     justify-content: space-around;
     align-items: center;
 }
-
-
-
 
 .cover-song{
     width: 25%;
@@ -183,7 +207,7 @@ footer .col-3{
     font-size:1.5em;
 }
 
-footer .col-5 .commands{
+footer .col-6 .commands{
     justify-content: space-around;
     align-items: center;
 }
@@ -265,4 +289,9 @@ footer .col-5 .commands{
 
 .icons-song .queue .fas{
     padding: 0;
+}
+
+
+.subtitle{
+
 }
