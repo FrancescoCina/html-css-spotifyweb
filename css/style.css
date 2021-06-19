@@ -113,6 +113,37 @@ header{
 }
 
 
+.low-buttons .download a img{
+    filter: opacity(50%);
+    width: 15px;
+    height: 15px;
+}
+
+
+.low-buttons .bckg-profile{
+    background-color: #707277;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.low-buttons .my-profile a img{
+    width:20px;
+    height: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* MAIN */
 
 
@@ -339,6 +370,8 @@ footer .col-6 .commands{
 
 @media screen and (min-width: 576px){
 
+
+    /* SIDEBAR CHE COMPARE ALLARGANDO SCHERMO */
     .sidebar{    
         width: 600px;
         align-items:flex-start;
@@ -357,7 +390,8 @@ footer .col-6 .commands{
         height: 40px;
     }
 
-    .top-buttons div a span{
+    .top-buttons div a span
+    {
         display: inline-block;
         font-size: 0.5em;
         font-weight: 600;
@@ -365,6 +399,27 @@ footer .col-6 .commands{
         color: #707277;
         vertical-align: middle;
         line-height: 100%;
+        padding-left: 5px;
+    }
+
+    .low-buttons div a span{
+        display: inline-block;
+        font-weight: 600;
+        text-decoration: none;
+        vertical-align: middle;
+        line-height: 100%; 
+    }
+
+    .low-buttons .download .description{
+        color:#707277;
+        font-size: 0.4em;
+        padding-left: 5px;
+    }
+
+
+    .low-buttons .my-profile .description{
+        color:#fff;
+        font-size: 0.6em;
         padding-left: 5px;
     }
 
@@ -376,7 +431,7 @@ footer .col-6 .commands{
         display:block;
         font-size: 0.8em;
         font-weight: 600;
-        padding-left: 15px;
+        padding-top: 20px;
 
     }
 
@@ -397,6 +452,27 @@ footer .col-6 .commands{
         padding: 5px 0;
         color: #707277;        
     }
+    /* ------------------------------------- */
+
+}
+
+
+@media screen and (min-width: 768px){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
