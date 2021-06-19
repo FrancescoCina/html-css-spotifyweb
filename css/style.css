@@ -1,5 +1,5 @@
 *{
-    box-sizing: border-box;+
+    box-sizing: border-box;
     margin: 0;
     padding:0;
 }
@@ -24,7 +24,6 @@ body{
 .flex-column{
     flex-direction: column;
 }
-
 
 .clearfix::after{
     display: table;
@@ -164,6 +163,14 @@ header{
 
 
 
+.col-lg-offset-3{
+    display: none;
+}
+
+
+
+
+
 .row [class*="col"] a{
     text-decoration:none;
     color: #707277;
@@ -177,20 +184,31 @@ main p{
 }
 
 
+
 .album-information .name-album{
     font-size: 1.2em;
     text-transform: capitalize;
 }
 
 
+.custom-playlist .author, 
+.most-popular .author{
+    font-size: 0.6em;
+}
+
 .author{
     color:#707277;
-    font-size: 0.2em;
+    font-size: 0.9em;
 }
 
 
+/* main p:nth-child(2){
+    padding-top: 25px;
+} */
+
+
  main .row [class*="col-"] img{
-    width: 97%;
+    width: 95%;
     height: 80%;
     object-fit: contain;
 }
@@ -281,7 +299,7 @@ footer .col-3{
 }
 
 footer .col-6 .commands{
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
@@ -292,6 +310,7 @@ footer .col-6 .commands{
 .commands i{
     font-size:1.8em;
     display:block;
+    padding: 0 10px;
 }
 
 
@@ -320,10 +339,10 @@ footer .col-6 .commands{
     margin: 0 7px;
 }
 
-.bar .listened{
+.bar-song .listened{
     display: block;
-    width: 15%;
     height: 100%;
+    width: 15%;
     background-color: lightgray;
     border-radius: 70px;
 }
@@ -356,12 +375,20 @@ footer .col-6 .commands{
     border-radius: 70px;
 }
 
-.col-4 .fas{
+.col-3 .fas{
     padding: 0 3px;
 }
 
-.icons-song .queue .fas{
+.icons-song .queue{
+    padding-right: 5px;
+}
+
+.icons-song .queue i{
     padding: 0;
+}
+
+.icons-song .fa-desktop{
+    padding-right: 5px;
 }
 
 
@@ -390,8 +417,7 @@ footer .col-6 .commands{
         height: 40px;
     }
 
-    .top-buttons div a span
-    {
+    .top-buttons div a span{
         display: inline-block;
         font-size: 0.5em;
         font-weight: 600;
@@ -459,32 +485,40 @@ footer .col-6 .commands{
 
 @media screen and (min-width: 768px){
 
+    .row .col-md-3:nth-child(5), 
+    .row .col-md-3:nth-child(6){
+        padding-top: 25px;
+    }
+}
 
 
 
+@media screen and (min-width: 992px){
+    .col-lg-offset-3{
+        display: block;
+    }
 
+    .j-center .col-3:nth-child(5),
+     .j-center .col-3:nth-child(6){
+        padding-top: 0;
+    }
+    
+    .row .col-md-3:nth-child(5), 
+    .row .col-md-3:nth-child(6) {
+        padding-top: 0;
+    }
 
+    
+    main .row:nth-child(4){
+        padding-bottom: 50px;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    main .row:nth-child(7){
+        padding-bottom: 15px;
+    }
 
 
 
 
 }
+
