@@ -380,6 +380,40 @@ footer .col-6 .commands{
     padding-right: 5px;
 }
 
+
+/* EFFETTI CON HOVER */
+
+.upgrade-button:hover{
+    transform: scale(1.2);
+}
+
+.row [class*="col"]:hover a{
+    color: #fff;
+}
+
+.j-center [class*="col"]:hover{
+    transform: scale(1.2);
+}
+
+.top-buttons .home:hover .description, 
+.top-buttons .search:hover .description, 
+.top-buttons .library:hover .description{
+    color:#fff;
+}
+
+
+
+.playlist p:hover{
+    color:#fff;
+    cursor: pointer;
+}
+.low-buttons .download .description:hover{
+    color:#fff;
+    cursor: pointer;
+    }
+
+
+
 /* MEDIA QUERY */
 
 @media screen and (min-width: 576px){
@@ -501,6 +535,12 @@ footer .col-6 .commands{
         width: 450px;
     }
 
+    .big-logo img{
+        width:100px;
+        height: 60px;
+    }
+
+
     .hidden-hr{
         display:block;
         width: 250%;
@@ -583,9 +623,15 @@ footer .col-6 .commands{
         height:  180px;
     }
 
-
     .del-rey p, .einaudi p {        
         left: 45px;
     }
-        
+}
+
+@media screen and (max-height:540px){
+    footer{
+        position: fixed;
+        width: 100%;
+        z-index: 2;        
+    }
 }
