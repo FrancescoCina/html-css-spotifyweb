@@ -279,6 +279,10 @@ footer .col-3{
     color: #707277;
 }
 
+.information-song span{
+    display: none;
+}
+
 .information-song p:first-child{
     color:#fff;
 }
@@ -467,15 +471,12 @@ footer .col-6 .commands{
         width: 140%;
     }
 
-
-
     /* ------------------------------------- */
 
 }
 
 
 @media screen and (min-width: 768px){
-
 
     .hidden-hr{
         display:block;
@@ -490,10 +491,6 @@ footer .col-6 .commands{
     .sidebar{    
         width: 550px;
     }
-
-
-
-
 }
 
 
@@ -509,7 +506,6 @@ footer .col-6 .commands{
         width: 250%;
     }
 
-
     .col-lg-offset-3{
         display: block;
     }
@@ -523,7 +519,6 @@ footer .col-6 .commands{
     .row .col-md-3:nth-child(7) {
         padding-top: 0;
     }
-
     
     main .row:nth-child(4){
         padding-bottom: 50px;
@@ -532,19 +527,65 @@ footer .col-6 .commands{
     main .row:nth-child(7){
         padding-bottom: 15px;
     }
-
-
-
-
 }
 
 
-
 @media screen and (min-width:1200px){
-    
+    .sidebar{    
+        width: 300px;
+    }
+
+    .hidden-hr{
+        display:block;
+        width: 170%;
+    }       
+
+    .information-song p:last-child{
+        display:none;
+    }
+
+    .information-song span{
+        display: inline;
+        text-transform: capitalize;
+        color: #707277;
+    }
+
+    .icons-song .far{
+        display: inline;
+        padding: 3px;
+        color: #707277;
+        font-size:1.5em;
+    }
+
+    .cover-song{
+        width: 30px;
+        height: 30px;
+    }
+
+     .circle{
+        width: 180px;
+        height:  180px;
+    }
+
+    .del-rey p, .einaudi p {        
+        left: 45px;
+    }
 }
 
 
 @media screen and (min-width:1400px){
-    
+    .sidebar{    
+        width: 250px;
+    }
+
+    .circle{
+        width: 180px;
+        height:  180px;
+    }
+
+
+    .del-rey p, .einaudi p {        
+        left: 45px;
+    }
+        
 }
