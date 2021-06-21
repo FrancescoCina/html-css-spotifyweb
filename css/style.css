@@ -7,10 +7,8 @@
 body{
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
-    color:#fff;
-    
+    color:#fff;    
 }
-
 
 /* UTILITIES */
 .text-center{
@@ -63,10 +61,9 @@ header{
     right:0;
 }
 
-
 .upgrade-button{
     float:right;
-    margin: 20px 5px 30px 0;
+    margin: 20px 20px 30px 0;
     line-height:35px;    
     border: 1px solid #fff;
     border-radius: 90px;
@@ -80,6 +77,8 @@ header{
     font-size: 0.5em;
     font-weight: 600;
 }
+
+/* SIDEBAR */
 
 .sidebar{    
     width: 230px;
@@ -96,11 +95,9 @@ header{
     padding-left: 15px;
 }
 
-
 .big-logo{
     display:none;
 }
-
 
 .description{
     display:none;
@@ -112,7 +109,6 @@ header{
 
 .playlist{
     display:none;
-
 }
 
 [class*="buttons"]{
@@ -124,13 +120,11 @@ header{
     height: 25px;
 }
 
-
 .low-buttons .download a img{
     filter: opacity(50%);
     width: 15px;
     height: 15px;
 }
-
 
 .low-buttons .bckg-profile{
     background-color: #707277;
@@ -146,7 +140,6 @@ header{
     height: 20px;
 }
 
-
 .hidden-hr{
     display:none;
     background-color:#707277;
@@ -154,14 +147,7 @@ header{
     width: 85%;
 }
 
-
-
-
-
-
-
 /* MAIN */
-
 
 .row{
     min-height: 0;    
@@ -171,28 +157,19 @@ header{
     padding-bottom: 30px;
 }
 
-
-
 .j-center .col-3:nth-child(6),
 .j-center .col-3:nth-child(7){
     padding-top: 15px;
 }
 
-
-
 .col-lg-offset-3{
     display: none;
 }
-
-
-
-
 
 .row [class*="col"] a{
     text-decoration:none;
     color: #707277;
 }
-
 
 main p{
    font-size: 1.2em;
@@ -222,6 +199,33 @@ main p{
     height: 80%;
     object-fit: contain;
 }
+
+.img-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* OVERLAY SU ALBUM */
+
+.img-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 80%;    
+    display: none;
+}
+
+.img-container .overlay i{
+    font-size: 50px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+/* -------------------- */
 
 .row .col-6{
     justify-content: space-around;
@@ -349,16 +353,6 @@ footer .col-6 .commands{
     border-radius: 70px;
 }
 
-
-
-
-/* .bar-song .listened::after{
-    content: "";
-    width: 2px;
-    height: 100%;
-    border-radius:50%;
-} */
-
 .row .col-4{
     justify-content: space-around;
     align-items: center;
@@ -431,10 +425,6 @@ footer .col-6 .commands{
     cursor: pointer;
     }
 
-
-
-
-
 .icons-song .far:hover{
     color:#fff;
     cursor: pointer;
@@ -451,6 +441,10 @@ footer .col-6 .commands{
     cursor: pointer;
 }
 
+.img-container:hover .overlay{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.4);
+}
 
 
 /* EFFETTI SULLE PROGRESSBAR */
@@ -460,40 +454,12 @@ footer .col-6 .commands{
     cursor: pointer;
 }
 
-
 .bar .volume:hover{
     background-color: greenyellow;
     cursor: pointer;
 }
-
-
-/* LAYOVER */
-/* 
-.layover:hover{
-    display: block;
-    width: 100%;
-    opacity: 1;
-    cursor: pointer;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ------------------------------------ */
+
 
 /* MEDIA QUERY */
 
