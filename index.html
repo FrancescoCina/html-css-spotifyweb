@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
+    <link rel="icon" href="./img/favicon.ico" type="image/ico"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
@@ -12,8 +13,9 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>    
-    <div class="container-fluid">
+   
         <div class="wrapper flexbox">
+            <!-- SIDEBAR DI SINISTRA -->
             <nav class="sidebar">
                 <div class="top-buttons">
                     <div class="big-logo"><a href="#"><img src="./img/logo.svg" alt="Big Spotify"></a></div>
@@ -40,11 +42,13 @@
                 </div>
             </nav>
             <main>
+                <!-- HEADER TRASPARENTE -->
                 <header>
                     <div class="upgrade-button">
                         <p>Effettua l'Upgrade</p>
                     </div>
                 </header>
+                <!-- PULSANTI MENU DI NAVIGAZIONE IN ALTO -->
                 <div class="row j-center text-center">
                     <div class="col-lg-offset-2 col-xl-offset-3"></div>
                     <div class="col-3 col-md col-lg-1 col-xl-1"><a href="#">In evidenza</a></div>
@@ -57,12 +61,14 @@
                 </div>  
                 <!-- INIZIO ALBUM  -->
                 <p>Recently played</p>
-                <div class="row">
+                <div class="row" id="recently-played">
                     <div class="col-6 col-md-3 col-lg-2">
-                        <img src="./img/metal_lifting.jpg" alt="Heavy Metal">
-                        <div class="album-information"> 
-                            <p class="name-album text-center">Heavy metal</p>
-                            <p class="author text-center">Subtitle</p>
+                        <div class="layover">
+                            <img src="./img/metal_lifting.jpg" alt="Heavy Metal">
+                        </div>
+                            <div class="album-information">
+                                <p class="name-album text-center">Heavy metal</p>
+                                <p class="author text-center">Subtitle</p>
                         </div>
                     </div>
                     <div class="col-6 col-md-3 col-lg-2">
@@ -101,6 +107,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- PLAYLIST PERSONALIZZATA DELL'UTENTE -->
                 <div class="custom-playlist">
                     <p>Creato per John Doe</p>
                     <p class="author">Più ascolti, più accurati saranno i suggerimenti.</p>
@@ -187,6 +195,6 @@
                 </div>
             </div>           
         </footer>
-    </div>
+    
 </body>
 </html>
