@@ -31,6 +31,15 @@ body{
     clear: both;
 }
 
+.active::after{
+    display: block;
+    content: "";
+    margin-left: 36px;
+    height: 3px;
+    width: 40%;
+    background-color: orange;
+}
+
 /* ------------------------------------ */
 
 .wrapper{
@@ -97,6 +106,9 @@ header{
     display:none;
 }
 
+.home img{
+    border-left: 3px solid orange;
+}
 
 .playlist{
     display:none;
@@ -188,17 +200,10 @@ main p{
    padding-bottom: 10px;
 }
 
-/* #recently-played .layover{
-    display: none;
-} */
-
-
-
 .album-information .name-album{
     font-size: 1.2em;
     text-transform: capitalize;
 }
-
 
 .custom-playlist .author, 
 .most-popular .author{
@@ -211,6 +216,7 @@ main p{
     text-transform: capitalize;
 }
 
+ main .row [class*="col-"] div img, 
  main .row [class*="col-"] img{
     width: 95%;
     height: 80%;
@@ -251,7 +257,6 @@ main p{
     text-transform: capitalize;
     font-size: 1em;
 }
-
 
 /* FOOTER */
 footer{
@@ -463,13 +468,29 @@ footer .col-6 .commands{
 
 
 /* LAYOVER */
-
+/* 
 .layover:hover{
     display: block;
     width: 100%;
-    height: 100%;
     opacity: 1;
-}
+    cursor: pointer;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ------------------------------------ */
