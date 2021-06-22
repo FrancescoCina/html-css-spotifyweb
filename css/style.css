@@ -269,6 +269,8 @@ main p{
 footer{
     background-color: #282828;
     height:100px;
+    position: relative;
+    z-index: 3;
 }
 
 footer .row{
@@ -681,12 +683,12 @@ footer .col-6 .commands{
     }
 
      .circle{
-        width: 180px;
-        height:  180px;
+        width: 110px;
+        height:  110px;
     }
 
     .del-rey p, .einaudi p {        
-        left: 45px;
+        left: 14px;
     }
 }
 
